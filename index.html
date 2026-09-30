@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn GitHub Together</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>🚀 Learn GitHub Together</h1>
+    <p>A tiny website we build as a team — one commit at a time.</p>
+    <button id="themeBtn">🌙 Dark mode</button>
+  </header>
+
+  <main>
+    <!-- ===== Section 1: Git basics ===== -->
+    <section>
+      <h2>The Basic Git Workflow</h2>
+      <ol class="steps">
+        <li><code>git clone &lt;repo-url&gt;</code> — copy the project to your computer</li>
+        <li><code>git checkout -b my-branch</code> — make your own branch</li>
+        <li>Edit a file (try adding your name in <code>script.js</code>!)</li>
+        <li><code>git add .</code> — stage your changes</li>
+        <li><code>git commit -m "Add my name"</code> — save a snapshot</li>
+        <li><code>git push origin my-branch</code> — send it to GitHub</li>
+        <li>Open a <strong>Pull Request</strong> on GitHub 🎉</li>
+      </ol>
+    </section>
+
+    <!-- ===== Section 2: Contributors (filled by JavaScript) ===== -->
+    <section>
+      <h2>Class Contributors</h2>
+      <p>Add your name to the <code>contributors</code> list in <code>script.js</code> and open a Pull Request.</p>
+      <div id="contributors" class="cards"></div>
+    </section>
+
+    <!-- ===== Section 3: Simple interaction ===== -->
+    <section>
+      <h2>Commit Counter</h2>
+      <p>Click the button every time you make a commit today!</p>
+      <p class="count">Commits: <span id="count">0</span></p>
+      <button id="commitBtn">+1 Commit</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

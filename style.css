@@ -1,0 +1,130 @@
+/* ===== Colors (change these to restyle the whole site) ===== */
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --text: #24292f;
+  --accent: #2da44e;   /* GitHub green */
+  --border: #d0d7de;
+}
+
+/* Dark mode colors — applied when <body> has class "dark" */
+body.dark {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #e6edf3;
+  --border: #30363d;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 48px 16px 32px;
+  background: var(--accent);
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+/* ===== Main layout ===== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.steps li {
+  margin-bottom: 8px;
+}
+
+/* ===== Contributor cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card .emoji {
+  font-size: 2rem;
+}
+
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+header button {
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 12px;
+}
+
+.count {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
